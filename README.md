@@ -21,7 +21,7 @@ docker run \
   -e ZONE=example.org \
   -e SUBDOMAIN=prueba \
   -e PROXIED=false \
-  oznu/cloudflare-ddns
+  juanico/cloudflare:<tag>
 ```
 
 ## Parameters
