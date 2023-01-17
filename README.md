@@ -8,8 +8,8 @@ This is a multi-arch image and will run on amd64 and aarch64 devices, including 
 
 | Image Tag      | Architecture  | OS            |
 | :------------- | :-------------| :------------ |
-| latest         | x64           | Alpine Linux  |
-| aarch64        | arm64         | Alpine Linux  |
+| amd64         | x64           | Alpine Linux  |
+| aarch64        | arm64v8         | Alpine Linux  |
 
 ## Usage
 
