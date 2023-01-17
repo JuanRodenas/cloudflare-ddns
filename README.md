@@ -17,9 +17,10 @@ Quick Setup:
 
 ```shell
 docker run \
-  -e API_KEY=xxxxxxx \
-  -e ZONE=example.com \
-  -e SUBDOMAIN=subdomain \
+  -e API_KEY=Cloudflare API token \
+  -e ZONE=example.org \
+  -e SUBDOMAIN=prueba \
+  -e PROXIED=false \
   oznu/cloudflare-ddns
 ```
 
@@ -77,12 +78,12 @@ If you prefer to use docker Compose:
 version: '2'
 services:
   cloudflare-ddns:
-    image: oznu/cloudflare-ddns:latest
+    image: juanico/cloudflare:<tag>
     restart: always
     environment:
-      - API_KEY=xxxxxxx
-      - ZONE=example.com
-      - SUBDOMAIN=subdomain
+      - API_KEY=Cloudflare API token
+      #- EMAIL=email
+      - ZONE=example.org    #solo el dominio
+      - SUBDOMAIN=prueba    #solo el subdominio sin el dominio
       - PROXIED=false
 ```
-
